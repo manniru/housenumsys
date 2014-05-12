@@ -1,0 +1,46 @@
+fieldset {
+  padding: inherit;
+  font:80%/1 sans-serif;
+  width:250px;
+  }
+label {
+  float:left;
+  width:150px;
+  margin-right:0.5em;
+  padding-top:0.2em;
+  text-align:right;
+  font-weight:bold;
+  }
+  
+  fieldset { border:2px solid blue }
+
+legend {
+  padding: 0.2em 0.5em;
+  border:1px solid blue;
+  color:blue;
+  font-size:90%;
+  text-align:center;
+  }
+
+
+label { color: blue; font-weight: bold; display: block; width: 100px;} label:after { content: ": " }
+
+input[type=text]{ color:blue; width: 120px; background-color : #B0E0E6; border: 1px solid #3366FF; }
+
+input[type=password]{ color:blue; width: 120px; background-color : #B0E0E6; }
+
+input[type=submit]{ color:blue; }
+
+select {
+	width: 120px;
+  border: 1px solid #AAA;
+  color: #555;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  }
+

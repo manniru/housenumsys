@@ -1,0 +1,255 @@
+@import "style-ba.css";
+
+
+
+
+body {
+  color: #3f3f3f;
+  background: #4faddc url(bg000000.png) 0 0 repeat-x;
+}
+
+a:link,
+a:visited,
+a:hover,
+.title, .title a,
+.node .taxonomy,
+#aggregator .news-item .categories, #aggregator .source, #aggregator .age,
+#forum td .name,
+div.admin-panel .description {
+	color: #104a91 !important;
+}
+
+#section1 {
+	color: #131e23;
+	background: #58a8d1 url(http://3.vrscloud.appspot.com/images/topregion-bg.png) 0 0 repeat-x;
+}
+
+#section1 a,
+#section1 a:link,
+#section1 a:visited,
+#section1 h2, #section1 h2 a {
+	color: #131e23 !important;
+}
+
+#middlecontainer {
+	background: #fff url(body-bg0.png) 0 0 repeat-x;
+}
+
+#middlecontainer h1.title {
+	color: #58a8d1 !important;
+}
+
+#middlecontainer h2.title  {
+	color: #1d2d45 !important;
+}
+
+.node h2.title a {
+	color: #ee7a00 !important;
+}
+
+#section2 {
+	color: #96b7cf;
+	background: #00335b url(http://3.vrscloud.appspot.com/images/bottomregion-bg.png) 0 0 repeat-x;
+}
+
+#section2 a,
+#section2 a:link,
+#section2 a:visited,
+#section2 h2, #section2 h2 a {
+	color: #96b7cf !important;
+}
+
+#section1 td.section {
+	background: transparent url(http://3.vrscloud.appspot.com/images/topline.png) 0 0 no-repeat;
+}
+
+#section2 td.section {
+	background: transparent url(http://3.vrscloud.appspot.com/images/bottomline.png) 0 1px no-repeat;
+}
+
+#masthead {
+	background: #317ba6 url(mast-bg0.png) 0 0 repeat-x;
+}
+
+#header .header-right {
+	background: transparent url(mast-r00.png) 100% 0 no-repeat;
+}
+
+#header .header-left {
+	background: transparent url(mast-l00.png) 0 0 no-repeat;
+	padding: 1px 0 14px 0;
+}
+
+#prenav {
+	padding: 1px;
+	background-color: #f58a10;
+}
+
+#postnav {
+	border-top: 1px solid #58a8d1;
+}
+
+#breadcrumb, #breadcrumb a {
+	color: #131e23 !important;
+	background-color: #8fd1f2;
+}
+
+#breadcrumb .breadcrumb {
+	padding: 0;
+}
+
+#bar {
+	background: transparent url(http://3.vrscloud.appspot.com/images/bar.png) 0 0 repeat-x;
+	padding: 4px 0 3px;
+}
+
+#bar2 {
+	background: transparent url(bar20000.png) 0 0 repeat-x;
+	padding: 1px;
+}
+
+#footer-wrapper {
+	background: #000911 url(footer-b.png) 0 0 repeat-x;
+}
+
+#footer-wrapper .footer-right {
+	background: transparent url(footer-r.png) 100% 0 no-repeat;
+}
+
+#footer-wrapper .footer-left {
+	height: 15px;
+	overflow: hidden;
+	background: transparent url(footer-l.png) 0 0 no-repeat;
+}
+
+#footer, #footer a {
+	color: #adadad !important;
+}
+
+#shadow {
+	background: transparent url(shadow-b.png) 0 0 repeat-x;
+	margin-top: 2px;
+}
+#shadow .shadow-right {
+	background: transparent url(shadow-r.png) 100% 0 no-repeat;
+}
+#shadow .shadow-left {
+	background: transparent url(shadow-l.png) 0 0 no-repeat;
+	height: 52px;
+}
+
+/* Menu styles */
+
+li.expanded {
+  list-style-image: url(http://3.vrscloud.appspot.com/images/menu-expanded.png);
+}
+li.collapsed {
+  list-style-image: url(menu-col.png);
+}
+
+#navigation {
+	background: #f58a10 url(menu-bg0.png) repeat-x;
+}
+
+#primary a, #suckerfishmenu a {
+	color: #fff !important;
+	background: transparent url(menu-div.png) 100% 0 repeat-y;
+}
+
+#primary a:hover, #suckerfishmenu a:hover {
+	background: #459fcd;
+}
+
+#primary li a.active, #suckerfishmenu li a.active {
+	color: #3f3f3f !important;
+}
+
+#secondary a {
+	color: #fff !important;
+	background: #2e7eaa url(menu-div.png) 100% 0 repeat-y;
+}
+
+#secondary a:hover {
+	background-color: #459fcd;
+}
+
+#secondary a.active {
+	color: #3f3f3f !important;
+	background-color: #459fcd;
+}
+
+/* suckerfishmenu */
+
+#suckerfishmenu ul.menu li li a:link, #suckerfishmenu ul.menu li li a:visited {
+	color: #fff;
+	background: #2e7eaa;
+	border-left: 1px solid #3c90bb;
+	border-top: 1px solid #3c90bb;
+	border-right: 1px solid #176992;
+	border-bottom: 1px solid #176992;
+}
+#suckerfishmenu ul.menu li ul a:hover {
+	color: #fff;
+	background: #459fcd;
+}
+#suckerfishmenu ul.menu li li.expanded a,
+#suckerfishmenu ul.menu li li.expanded ul.menu li.expanded a {
+	background: #2e7eaa url(http://3.vrscloud.appspot.com/images/arrow1.png) 100% 50% no-repeat;
+}
+#suckerfishmenu ul.menu li li.expanded a:hover,
+#suckerfishmenu ul.menu li li.expanded ul.menu li.expanded a:hover {
+	background: #459fcd url(http://3.vrscloud.appspot.com/images/arrow2.png) 100% 50% no-repeat;
+}
+#suckerfishmenu ul.menu li li.expanded ul.menu a,
+#suckerfishmenu ul.menu li li.expanded ul.menu li.expanded ul.menu a {
+	background: #2e7eaa;
+}
+#suckerfishmenu ul.menu li li.expanded ul.menu a:hover,
+#suckerfishmenu ul.menu li li.expanded ul.menu li.expanded ul.menu a:hover {
+	background: #459fcd;
+}
+
+ul.links li {
+	border-left: 1px solid #d3d3d3;
+}
+
+.book-navigation .page-links {
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+#footer ul.links li {
+	border-left: 1px solid #666;
+}
+
+
+/* main style overiding */
+
+#site-name a, #site-name a:hover {
+	color: white !important;
+}
+
+#site-slogan {
+	color: white;
+}
+
+#mission {
+	color: #333;
+	border: solid 1px #d3d3d3;
+}
+
+#search .form-text, #search .form-submit {
+	border: 1px solid #369;
+}
+
+.submitted, .links {
+	color: #8e6126;
+}
+
+.comment {
+	border: 1px solid #d3d3d3;
+}
+
+.image-thumbnail, .image-preview {
+	border: 2px #ffc280 solid;
+}

@@ -1,0 +1,553 @@
+/* style.css,v 2.0 2007/09/22 
+ *
+ * Salamander Skins theme, for Drupal 5&6
+ * Florian Radut, florian[at]radut.net
+ */
+
+@import "style-mi.css";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif, Arial, Verdana, Helvetica;
+	font-size: 83%;
+	line-height: 125%;
+	min-width: 850px;
+}
+#above {
+	height: 20px;
+	text-align: center;
+}
+#page, #above {
+	margin: 0 auto;
+	width: 95%; /* page width setiing ... for example, change it to 1000px for a page width of 1024px  */
+}
+tbody {
+	border: none;
+}
+tr.odd td, tr.even td {
+	padding: 0.3em;
+}
+h1, h2, h3, h4, h4 {
+	padding-bottom: 5px;
+	margin: 10px 0;
+}
+h1 {
+	font-size: 160%;
+	line-height: normal;
+}
+h2 {
+	font-size: 125%;
+}
+h3 { 
+	font-size: 110%;
+}
+h4 {
+	font-size:  100%;
+}
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.9em;
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+fieldset {
+	border: 1px solid #ccc;
+}
+pre {
+	background-color: #eee;
+	padding: 0.75em 1.5em;
+	font-size: 12px;
+	border: 1px solid #ddd;
+}
+table {
+	font-size: 1em;
+}
+.form-item label {
+	font-size: 1em;
+	color: #222;
+}
+.item-list .title {
+	color: #222;
+}
+.links {
+	margin: 0;
+}
+.comment .links {
+	margin-bottom: 0;
+}
+#header, #content {
+	width: 100%;
+}
+#header .block {
+	padding: 0;
+	margin: 10px 20px 0 20px;
+}
+table.sections {
+	width: 100%;
+	padding: 0;
+}
+.clr {
+	clear: both;
+}
+td.section.width49 {
+	width: 50%;
+}
+td.section.width33 {
+	width: 33%;
+}
+#masthead {
+	float: none;
+	clear: both;
+	line-height: normal;
+}
+#logo {
+	float: left;
+	margin: 0;
+	padding: 27px 10px 5px 19px;
+}
+#logo img {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+#site-name {
+	margin: 0 0 0 35px;
+	padding: 5px 0 0 0;
+}
+#site-name a, #site-name a:hover {
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 150%;
+}
+#site-slogan {
+	margin: 0 0 0 38px;
+	padding: 2px 0 0 0;
+	font-size: 10px;
+}
+#mission {
+	font-weight: normal;
+	padding: 1em 1em 0.75em 2em;
+	margin: 20px 10px;
+	font-size: 85%;
+}
+#mission a, #mission a:visited {
+	font-weight: normal;
+	text-decoration: underline;
+}
+#search {
+	padding-top: 15px;
+	padding-right: 15px;
+	float: right;
+}
+#search .form-text, #search .form-submit {
+	font-size: 1.1em;
+	height: 1.5em;
+	vertical-align: middle;
+}
+#search .form-text {
+	width: 8em;
+	padding: 0 0.5em;
+}
+#search .form-item label, .block-search .form-item label {
+  display: none;
+}
+
+/* "Skip to Main Content" link - is useful for both visually impaired people and those with mobility impairments who cannot use a mouse */
+#skip-nav {
+	display: none;
+}
+#skip-nav a, #skip-nav a:hover, #skip-nav a:visited {
+	position: absolute;
+	left: 0;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+#skip-nav a:active, #skip-nav a:focus {
+	position: static;
+	width: auto;
+	height: auto;
+}
+
+/* Menu styles */
+
+#primary {
+	line-height: 30px;
+}
+#primary ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#primary li {
+	display: inline;
+}
+#primary a {
+	font-weight: bold;
+	display: block;
+	float: left;
+	padding: 0px 14px;
+	margin: 0px 1px 0px 0px;
+	font-size: 95%;
+}
+#secondary ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#secondary li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+#secondary li a {
+	float: left;
+	display: block;
+	font-size: 90%;
+	padding: 0px 14px;
+}
+#primary a, #primary a:hover, #secondary a, #secondary a:hover {
+	text-decoration: none;
+}
+#footer ul.links li.first, ul.links li.first {
+	border: none;
+}
+#footer .block ul, #footer ul.links li.first {
+	margin-left: 0;
+  padding-left: 0;
+}
+#middlecontainer {
+	padding: 1px 0 5px 0;
+}
+#main {
+	padding: 10px;
+}
+#main .block {
+	padding-top: 10px;
+}
+#sidebar-left, #sidebar-right {
+	width: 250px;
+	vertical-align: top;
+}
+#sidebar-left .block, #sidebar-right .block {
+	padding: 10px 20px 15px 20px;
+}
+#footer {
+	text-align: center;
+	margin: 0;
+	padding: 1em;
+	font-size: 75%;
+}
+#footer a {
+	font-weight: normal;
+}
+#footer .block {
+	padding: 0;
+	margin: 0;
+}
+#header .block h2, #footer .block h2 {
+	display: none;
+}
+#breadcrumb {
+	padding-left: 14px;
+	clear: both;
+	font-size: 80%;
+}
+#breadcrumb a {
+	font-weight: normal;
+}
+.title, .title a {
+	font-weight: bold;
+	margin: 0 auto;
+}
+.submitted {
+	font-size: 0.8em;
+}
+.links a {
+	font-weight: bold;
+}
+.box {
+	padding: 0 0 1.5em 0;
+}
+.block {
+	padding-bottom: 0.75em;
+	margin-bottom: .5em;
+}
+.section .block, .section .box {
+	padding: 0;
+	margin-bottom: 15px;
+}
+.block .title {
+	margin-bottom: .25em;
+}
+.node {
+	margin: .5em 0 2em 0;
+}
+.sticky {
+	padding: .5em;
+	border: dashed 1px #7f7f7f;
+}
+.node .content, .comment .content {
+	margin: .5em 0 .5em 0;
+}
+.node .taxonomy {
+	font-size: 0.8em;
+	padding-left: 0.6em;
+}
+.node .taxonomy a {
+	font-weight: normal;
+}
+#help {
+	font-size: 0.9em;
+	margin-bottom: 1em;
+}
+.messages {
+	background-color: #eee;
+	border: 1px solid #ccc;
+	padding: 0.3em;
+	margin-bottom: 1em;
+}
+.error {
+	border-color: red;
+}
+.comment {
+	padding: .5em;
+	margin-bottom: 1em;
+}
+.comment .title {
+	padding: 10px 0 12px 19px;
+	background: transparent url(http://3.vrscloud.appspot.com/css/images/all/icon-comment.png) left center no-repeat;
+}
+.comment .title a {
+	font-weight: normal;
+}
+.comment .new {
+	text-align: right;
+	font-weight: bold;
+	font-size: 0.8em;
+	float: right;
+	color: red;
+}
+.node .picture, .comment .picture {
+	float: right;
+	margin: 0.5em;
+}
+#aggregator .feed-source {
+	background-color: #eee;
+	border: 1px solid #ccc;
+	padding: 1em;
+	margin: 1em 0;
+}
+#aggregator .news-item .categories, #aggregator .source, #aggregator .age {
+	font-style: italic;
+	font-size: 0.9em;
+}
+#aggregator .title {
+	margin-bottom: 0.5em;
+}
+#aggregator h3 {
+	margin-top: 1em;
+}
+#forum table {
+	width: 100%;
+}
+#forum td {
+	padding: 0.5em;
+}
+#forum td.forum, #forum td.posts {
+	background-color: #eee;
+}
+#forum td.topics, #forum td.last-reply {
+	background-color: #ddd;
+}
+#forum td.container {
+	background: #cdcdcd url(http://3.vrscloud.appspot.com/css/images/all/forum-container.jpg) right top no-repeat;
+}
+#forum td.container a {
+	padding: 10px 0 10px 40px;
+	background: transparent url(http://3.vrscloud.appspot.com/css/images/all/forum-link.png) left center no-repeat;
+}
+#forum td.statistics, #forum td.settings, #forum td.pager {
+	height: 1.5em;
+	border: 1px solid #bbb;
+}
+#forum td .links {
+	padding-top: 0.7em;
+	font-size: 0.9em;
+}
+#profile .profile {
+	clear: both;
+	border: 1px solid #abc;
+	padding: .5em;
+	margin: 1em 0em;
+}
+#profile .profile .name {
+	padding-bottom: 0.5em;
+}
+.block-forum h3 {
+	margin-bottom: .5em;
+}
+div.admin-panel .body {
+	background: #f4f4f4;
+}
+div.admin-panel h3 {
+	color: #abc;
+	padding: 5px 8px 5px;
+	margin: 0;
+}
+#section1 td.section, #section2 td.section {
+	padding: 10px 20px 0 20px;
+}
+
+
+/* another son of suckerfish...
+http://www.htmldog.com/articles/suckerfish/dropdowns/
+http://www.alistapart.com/articles/horizdropdowns
+*/
+
+#suckerfish-container {
+	margin: 0 auto; /* center page */
+	text-align: left; /* overrides text-align: center */
+}
+#suckerfishmenu {
+	float: left; /* suckerfish align */
+	line-height: 30px;
+}
+#suckerfishmenu h2 {
+	display: none;
+}
+#suckerfishmenu	.block {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#suckerfishmenu	.block, #suckerfishmenu	.box {
+	padding: 0;
+}
+#suckerfishmenu ul.menu li, #suckerfishmenu ul.menu li {
+	list-style: none;
+}
+#suckerfishmenu ul.menu { /* top level ul */
+	padding: 0;
+	z-index: 100;
+	display: inline;
+} 
+#suckerfishmenu	a {
+	display: block;
+	padding: 0 14px; /* padding between main menu elements */
+	margin: 0;
+	text-decoration: none;
+	font-weight: bold;
+}
+#suckerfishmenu a:active,
+#suckerfishmenu a:hover {
+	text-decoration: none;
+}
+#suckerfishmenu	li {
+	display: inline;
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 1%;
+}
+
+/* suckerfish second-level lists */
+#suckerfishmenu ul.menu ul {
+	padding: 0;
+	margin: 0;
+}
+#suckerfishmenu ul.menu li ul {
+	position: absolute;
+	width: 170px;
+	left: -999em; /* to hide menus because display: none isn't read by screen readers */
+}
+#suckerfishmenu ul.menu li li {
+	height: auto;
+	float: right;
+	width: 170px;
+}
+#suckerfishmenu ul.menu li li a:link,
+#suckerfishmenu ul.menu li li a:visited {
+	font-weight: bold;
+	width: 170px;
+}
+#suckerfishmenu ul.menu li ul a {
+	padding: 0.1em 0 0em 0.8em;
+	width: 170px;
+	line-height: 29px;
+}
+#suckerfishmenu ul.menu li ul a:active,
+#suckerfishmenu ul.menu li ul a:hover {
+	text-decoration: none;
+}
+
+/* suckerfish margin for pullouts */
+#suckerfishmenu ul.menu li ul ul {
+	margin: -32px 0 0 182px;
+}
+#suckerfishmenu ul.menu li:hover ul ul, 
+#suckerfishmenu ul.menu li:hover ul ul ul, 
+#suckerfishmenu ul.menu li.sfhover ul ul, 
+#suckerfishmenu ul.menu li.sfhover ul ul ul {
+	left: -999em;
+}
+#suckerfishmenu ul.menu li:hover ul, 
+#suckerfishmenu ul.menu li li:hover ul, 
+#suckerfishmenu ul.menu li li li:hover ul, 
+#suckerfishmenu ul.menu li.sfhover ul, 
+#suckerfishmenu ul.menu li li.sfhover ul, 
+#suckerfishmenu ul.menu li li li.sfhover ul {
+	left: auto;
+}
+
+#user-login-form {
+	text-align: left !important;
+}
+#user-login-form ul li.openid-link ,
+#user-login-form ul li.user-link {
+  padding: 5px 0 0 20px;
+  margin-left: 0;
+  list-style-type: none;
+}
+.book-navigation .menu {
+	border-top: none;
+}
+.legal {
+	margin: 10px auto 0 auto;
+	padding: 0 90px 0 90px;
+}
+.by {
+	position: relative;
+	float: right;
+	top: -20px;
+	margin: 0 5px -20px;
+	text-align: center;
+}
+.byy {
+	display:none;
+}
+#offline {
+	padding: 50px;
+}
+
+
+/* Module specific styles */
+
+ul.galleries li, ul.images li {
+	background : none;
+	border : none;
+}
+body.mceContentBody {
+	background: #eee !important;
+	font-size: 14px;
+}
+body.mceContentBody a:link {
+	font-weight: normal;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project HouseNumSys">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="C:/Users/Mannir/Music/house/MannirServer1.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.mannir.server.Runwar"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="C:/Users/Mannir/git/housenumsys/HouseNumSys/build/classes"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/ant-1.6.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/core-3.2.0.666.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/jetty-6.1.26.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/jetty-util-6.1.26.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/jsp-2.1-glassfish-2.1.v20091210.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/jsp-2.1-jetty-6.1.26.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/jsp-api-2.1-glassfish-2.1.v20091210.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/servlet-api-2.5-20081211.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/sqlite-jdbc-3.7.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/eclipse/plugins/org.junit_4.11.0.v201303080030/junit.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/eclipse/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+        </jar>
+    </target>
+</project>
