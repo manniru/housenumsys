@@ -16,12 +16,12 @@
   
 	
 	    <target name="buildjar">
-        <jar destfile="C:/Users/Mannir/git/housenumsys/HouseNumSys/dist/StartServer.jar" filesetmanifest="mergewithoutmain">
+        <jar destfile="dist/StartServer.jar" filesetmanifest="mergewithoutmain">
             <manifest>
                 <attribute name="Main-Class" value="com.mannir.server.Runwar"/>
                 <attribute name="Class-Path" value="."/>
             </manifest>
-            <fileset dir="C:/Users/Mannir/git/housenumsys/HouseNumSys/build/classes"/>
+            <fileset dir="build/classes"/>
             <zipfileset excludes="META-INF/*.SF" src="lib/ant-1.6.5.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="lib/core-3.2.0.666.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="lib/jetty-6.1.26.jar"/>

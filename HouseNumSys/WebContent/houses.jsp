@@ -85,7 +85,7 @@ com.mannir.housenumsys.House"
 <fieldset class=" collapsible"><legend>Add House</legend>
 <input name="regform" type="hidden" value="regform" />
 <div class="fieldset-wrapper"></div>
-<div style="float:left;margin-right:2px;"><label>HouseNo</label><input type="text" name="houseno" value="" size="5" class="form-text"></div>
+<div style="float:left;margin-right:2px;"><label>Plot No</label><input type="text" name="houseno" value="" size="5" class="form-text"></div>
 <div style="float:left;margin-right:2px;"><label>LGA</label><select name="lganame" class="form-select">
 <option value='AJINGI'>AJINGI</option>
 <option value='ALBASU'>ALBASU</option>
@@ -141,7 +141,7 @@ com.mannir.housenumsys.House"
 <div style="float:left;margin-right:2px;"><label>Nationality</label><input type="text" name="nationality" value="Nigerian" size="10" class="form-text"></div>
 <div style="float:left;margin-right:2px;"><label>Land Use</label><select name="landuse" class="form-select">
 <option value='Residential'>Residential</option><option value='Commercial'>Commercial</option></select></div>
-<div style="float:left;margin-right:2px;"><label>Date</label><input type="text" name="date" value="04-25-2014" size="8" class="form-text"></div>
+<div style="float:left;margin-right:2px;"><label>Date</label><input type="text" name="date" value="" size="8" class="form-text"></div>
 
 <div style="float:left;margin-right:2px;"><div id="btn" align="center"><input type="submit" name="submit" id="submit" value="Submit" /></div></div>
 <input type="button" onclick="ShowNewPage()" value="Send SMS" />

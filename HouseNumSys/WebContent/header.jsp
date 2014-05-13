@@ -85,11 +85,6 @@ else {
 	if(session.getAttribute("role").equals("admin")) {
 		out.println("<li class='menu-114 first'><a href='/' title='Home'>Home</a></li>");
 		out.println("<li class='menu'><a href='houses.jsp'>List Houses</a></li>");
-		out.println("<li class='menu'><a href='houses.jsp'>Add House</a></li>");
-		out.println("<li class='menu'><a href='#'>View House</a></li>");
-		out.println("<li class='menu'><a href='houses.jsp'>Edit House</a></li>");
-		out.println("<li class='menu'><a href='#'>Delete House</a></li>");
-		out.println("<li class='menu'><a href='#'>Search House</a></li>");
 		out.println("<li class='menu'><a href='#'>Reports</a></li>");
 		out.println("<li class='menu'><a href='#'>Exports</a></li>");
 		out.println("<li class='leaf last'><a href='?q=logout'>Log out</a></li>");
