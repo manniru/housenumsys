@@ -1,42 +1,43 @@
 <project name="HouseNumSys" basedir="." default="default">
  
-	<target name="default" depends="buildwar,deploy, create_run_jar, copydb"></target>
+	<target name="default" depends="buildwar, buildjar, copyroot, copydb"></target>
  
 	<target name="buildwar">
 		<war basedir="WebContent" destfile="ROOT.war" webxml="WebContent/WEB-INF/web.xml">
 			<exclude name="WEB-INF/**" />
 			<exclude name="WEB-INF/lib/ant-1.6.5.jar" />
 			<exclude name="WEB-INF/lib/core-3.2.0.666.jar" />
-			<exclude name="WEB-INF/lib/core-3.2.0.666.jar" />
+			<exclude name="WEB-INF/lib/jetty-6.1.26.jar" />
+			<exclude name="WEB-INF/lib/jetty-util-6.1.26.jar" />
+			<exclude name="WEB-INF/lib/jsp-2.1-glassfish-2.1.v20091210.jar" />
 			<webinf dir="WebContent/WEB-INF/"><include name="**/*.jar" /></webinf>
 		</war>
 	</target>
- 
-	<target name="deploy"><move file="ROOT.war" todir="dist"/></target>
- 
+  
 	
-	    <target name="create_run_jar">
+	    <target name="buildjar">
         <jar destfile="C:/Users/Mannir/git/housenumsys/HouseNumSys/dist/StartServer.jar" filesetmanifest="mergewithoutmain">
             <manifest>
                 <attribute name="Main-Class" value="com.mannir.server.Runwar"/>
                 <attribute name="Class-Path" value="."/>
             </manifest>
             <fileset dir="C:/Users/Mannir/git/housenumsys/HouseNumSys/build/classes"/>
-            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/ant-1.6.5.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/core-3.2.0.666.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/jetty-6.1.26.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/jetty-util-6.1.26.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/jsp-2.1-glassfish-2.1.v20091210.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/jsp-2.1-jetty-6.1.26.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/jsp-api-2.1-glassfish-2.1.v20091210.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/servlet-api-2.5-20081211.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Mannir/git/housenumsys/HouseNumSys/WebContent/WEB-INF/lib/sqlite-jdbc-3.7.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/ant-1.6.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/core-3.2.0.666.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/jetty-6.1.26.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/jetty-util-6.1.26.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/jsp-2.1-glassfish-2.1.v20091210.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/jsp-2.1-jetty-6.1.26.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/jsp-api-2.1-glassfish-2.1.v20091210.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/servlet-api-2.5-20081211.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/sqlite-jdbc-3.7.2.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="D:/eclipse/plugins/org.junit_4.11.0.v201303080030/junit.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="D:/eclipse/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
         </jar>
     </target>
     
     
+    <target name="copyroot"><copy file="ROOT.war" todir="dist" /></target>
     <target name="copydb"><copy file="housenumsys.db" todir="dist" /></target>
     
 </project>
