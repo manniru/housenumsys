@@ -3,14 +3,10 @@ package com.mannir.server;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 
-
 public class ServerStartStopActionListner implements ActionListener {
-
 	private final JettyServer jettyServer;
-
 	public ServerStartStopActionListner(JettyServer jettyServer) {
 		this.jettyServer = jettyServer;
 	}

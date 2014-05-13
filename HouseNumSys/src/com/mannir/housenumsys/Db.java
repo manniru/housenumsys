@@ -17,9 +17,8 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.mannir.dao.User;
-
 public class Db {
+	// db handler
 	Db db;
 	private String dbtype, dbhost, dbuser, dbpass, dbname;
 	private static Connection cn = null;

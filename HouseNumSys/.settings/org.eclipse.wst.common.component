@@ -2,7 +2,6 @@
     <wb-module deploy-name="HouseNumSys">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/res"/>
         <property name="context-root" value="HouseNumSys"/>
         <property name="java-output-path" value="/HouseNumSys/build/classes"/>
     </wb-module>
