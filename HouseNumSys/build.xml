@@ -21,7 +21,7 @@
                 <attribute name="Main-Class" value="com.mannir.server.Runwar"/>
                 <attribute name="Class-Path" value="."/>
             </manifest>
-            <fileset dir="build/classes"/>
+            <fileset dir="build1/classes"/>
             <zipfileset excludes="META-INF/*.SF" src="lib/ant-1.6.5.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="lib/core-3.2.0.666.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="lib/jetty-6.1.26.jar"/>
