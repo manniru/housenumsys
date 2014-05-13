@@ -1,3 +1,15 @@
+<script src="JavaScript/ModalPopupWindow.js" type="text/javascript"></script>
+ <style>
+     body
+        {
+            font-family: Verdana;
+            font-size: 10px;
+         
+        }
+     
+    </style>
+    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@include file="header.jsp" %>
 <%@
 page import="javax.servlet.http.*,
@@ -68,7 +80,9 @@ com.mannir.housenumsys.House"
 <div class="node">
 <link rel="stylesheet" href="css/forms.css" />
 <link rel="stylesheet" href="css/chosen.css" />
-<form method="post"><fieldset class=" collapsible"><legend>Add House</legend>
+<form method="post">
+
+<fieldset class=" collapsible"><legend>Add House</legend>
 <input name="regform" type="hidden" value="regform" />
 <div class="fieldset-wrapper"></div>
 <div style="float:left;margin-right:2px;"><label>HouseNo</label><input type="text" name="houseno" value="" size="5" class="form-text"></div>
@@ -130,6 +144,7 @@ com.mannir.housenumsys.House"
 <div style="float:left;margin-right:2px;"><label>Date</label><input type="text" name="date" value="04-25-2014" size="8" class="form-text"></div>
 
 <div style="float:left;margin-right:2px;"><div id="btn" align="center"><input type="submit" name="submit" id="submit" value="Submit" /></div></div>
+<input type="button" onclick="ShowNewPage()" value="Send SMS" />
 <div style="clear:both"></div>
 
 </fieldset></form>
@@ -150,8 +165,8 @@ for(House hs : db.listHouse()) {
 	out.println("<td style='border:1px solid black;'>"+hs.getDistrict()+"</td>");
 	out.println("<td style='border:1px solid black;'>"+hs.getWard()+"</td>");
 	out.println("<td style='border:1px solid black;'>"+hs.getHoldername()+"</td>");
-	out.println("<td style='border:1px solid black;'>"+hs.getMobileno()+"</td>");
 	out.println("<td style='border:1px solid black;'>"+hs.getHolderaddress()+"</td>");
+	out.println("<td style='border:1px solid black;'>"+hs.getMobileno()+"</td>");
 	out.println("<td style='border:1px solid black;'>"+hs.getNationality()+"</td>");
 	out.println("<td style='border:1px solid black;'>"+hs.getLanduse()+"</td>");
 	out.println("<td style='border:1px solid black;'>"+hs.getDate()+"</td>");
@@ -185,4 +200,77 @@ out.println("</tbody></table>");
 </div> <!-- /footer-wrapper -->
 <div id="shadow" class="clear-block"><div class="shadow-right">
 <div class="shadow-left">
-</div>	</div></div></div></body></html>
+</div>	</div></div></div>
+
+
+
+
+
+
+<script>
+
+ var modalWin = new CreateModalPopUpObject();
+ modalWin.SetLoadingImagePath("images/loading.gif");
+ modalWin.SetCloseButtonImagePath("images/remove.gif");
+ //Uncomment below line to make look buttons as link
+ //modalWin.SetButtonStyle("background:none;border:none;textDecoration:underline;cursor:pointer");
+
+function ShowNewPage(){
+ var callbackFunctionArray = new Array(EnrollNow, EnrollLater);
+ modalWin.ShowURL('sendsms.jsp',200,470,'Send SMS Message',null,callbackFunctionArray);
+ }
+ 
+ 
+function ShowMessage() {
+ modalWin.ShowMessage('This Modal Popup Window using Javascript',200,400,'User Information');
+ }
+  
+ function  ShowMessageWithAction(){
+    //ShowConfirmationMessage(message, height, width, title,onCloseCallBack, firstButtonText, onFirstButtonClick, secondButtonText, onSecondButtonClick);
+    modalWin.ShowConfirmationMessage('This is confirmation window using Javascript',200,400,'User Confirmation',null,'Agree',Action1,'Disagree',Action2);
+ }
+
+function ShowMessageNoDragging(){
+ modalWin.Draggable=false;
+ modalWin.ShowMessage('You can not drag this window',200,400,'User Information');
+
+}
+
+function Action1(){
+alert('Action1 is excuted');
+modalWin.HideModalPopUp();
+}
+
+function Action2(){
+alert('Action2 is excuted');
+modalWin.HideModalPopUp();
+}
+
+function EnrollNow(msg){
+modalWin.HideModalPopUp();
+modalWin.ShowMessage(msg,200,400,'User Information',null,null);
+}
+
+function EnrollLater(){
+modalWin.HideModalPopUp();
+modalWin.ShowMessage(msg,200,400,'User Information',null,null);
+}
+
+function HideModalWindow() {
+    modalWin.HideModalPopUp();
+}
+
+function ShowChildWindowValues(name,email,address,phone,zip) {
+    var displayString = "<b>Values Of Child Window</b> <br><br>Name : " + name;
+    displayString += "<br><br>Email : " + email;
+    displayString += "<br><br>Address : " + address;
+    displayString += "<br><br>Phone : " + phone;
+    displayString += "<br><br>Zip : " + zip;
+    var div = document.getElementById("divShowChildWindowValues");
+    div.style.display = "";
+    div.innerHTML = displayString;
+}
+
+ </script>
+ 
+ </body></html>

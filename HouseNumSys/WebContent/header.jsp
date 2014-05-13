@@ -32,8 +32,7 @@ if(request.getParameter("q") != null) {
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <head>
-<title>Nassarawa House Numbering Information System</title>
-<link rel="alternate" type="application/rss+xml" title="Mannir eSystems Limited RSS" href="rss.xml">
+<title>Nassarawa Local Government Area House Numbering Information System</title>
 
 <link rel="shortcut icon" href="files/favicon0.png" type="image/x-icon">
 <link type="text/css" rel="stylesheet" media="all" href="files/node0000.css">
@@ -60,7 +59,7 @@ if(request.getParameter("q") != null) {
 					<div id="logo" style="text-align:left;"><a href="/" title="Home"><img width="80" height="80" src="images/logo.png" alt="Home"></a></div> 
 					<div id="name-and-slogan">
                     <h1 id="site-name" align="center">
-							<a href="/" title="Home">Nassarawa House Numbering Information System</a>
+							<a href="/" title="Home">Nassarawa Local Government Area House Numbering Information System</a>
                           
 						</h1>
 						</div> <!-- /name-and-slogan -->

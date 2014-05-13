@@ -56,7 +56,7 @@
 	<div id="footer">
 	<div style="float:left"></div>
 		
-<div class="legal"> Systems Design & Developed and Maintained by <a href="http://mannir.net/">MUHAMMAD MANNIR AHMAD</a>. (U1131819)
+<div class="legal"> Systems Design & Developed and Maintained by <a href="http://mannir.net/">MANNIR ESYSTEMS LIMITED 2014</a>
   <div id="brand"></div></div>
 	</div>
 	<div class="footer-right">
