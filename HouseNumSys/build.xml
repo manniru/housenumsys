@@ -31,7 +31,7 @@
             <zipfileset excludes="META-INF/*.SF" src="lib/jsp-api-2.1-glassfish-2.1.v20091210.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="lib/servlet-api-2.5-20081211.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="lib/sqlite-jdbc-3.7.2.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="lib/org.junit_4.11.0.v201303080030/junit.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/junit.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="lib/org.hamcrest.core_1.3.0.v201303031735.jar"/>
         </jar>
     </target>
